@@ -1,8 +1,9 @@
+// app/contact/page.jsx
 export default function ContactPage() {
   const phone = '+91-9067256810';
   const altPhone = '+91-8530031710';
-  const email = 'hindustsan356.com';
-  const whatsapp = '+91-9067256810';
+  const email = 'hindustan356.com';
+  const whatsapp = '+91-XXXXXXXXXX';
 
   return (
     <div className="py-10 sm:py-14">
@@ -73,7 +74,11 @@ export default function ContactPage() {
           <div className="p-4 text-xs text-neutral-200 rounded-xl bg-neutral-950/70 border border-neutral-800">
             <h2 className="mb-1 text-sm font-semibold">Quick Actions</h2>
             <div className="flex flex-wrap gap-2 mt-1">
-              <a href={`tel:${phone}`} className="btn" style={{ ['--btn-font-size']: '0.7rem' }}>
+              <a
+                href={`tel:${phone}`}
+                className="btn"
+                style={{ ['--btn-font-size']: '0.7rem' }}
+              >
                 Call now
               </a>
               <a
@@ -94,9 +99,12 @@ export default function ContactPage() {
           id="callback-form"
           className="p-5 rounded-2xl bg-neutral-950/80 border border-neutral-800 shadow-[0_0_40px_rgba(15,23,42,0.9)]"
         >
-          <h2 className="mb-3 text-base font-semibold">Request a Call Back / Send Your Query</h2>
+          <h2 className="mb-3 text-base font-semibold">
+            Request a Call Back / Send Your Query
+          </h2>
           <p className="mb-4 text-xs text-neutral-300">
-            This form will open your email app with the details filled in. You can review and send it directly to us.
+            This form will open your email app with the details filled in. You can
+            review and send it directly to us.
           </p>
           <form
             className="space-y-4 text-xs"
@@ -157,7 +165,8 @@ export default function ContactPage() {
           </form>
 
           <p className="mt-4 text-[11px] text-neutral-400">
-            Note: This button opens your default email application with the details filled. If no email app is configured, nothing will appear.
+            Note: This button opens your default email application with the
+            details filled. If no email app is configured, nothing will appear.
           </p>
         </div>
       </div>
@@ -166,8 +175,9 @@ export default function ContactPage() {
       <div className="mt-10">
         <h2 className="mb-2 text-base font-semibold">Location Overview</h2>
         <p className="mb-3 text-xs text-neutral-200">
-          Jaigad (Jaigarh) Port is located on the west coast of Maharashtra, between Mumbai and Goa. The office
-          is situated in the Jaigad area of Ratnagiri district, with road connectivity to nearby industrial and
+          Jaigad (Jaigarh) Port is located on the west coast of Maharashtra,
+          between Mumbai and Goa. The office is situated in the Jaigad area of
+          Ratnagiri district, with road connectivity to nearby industrial and
           agricultural regions.
         </p>
         <div className="overflow-hidden rounded-xl aspect-video bg-neutral-950 border border-neutral-800">
@@ -180,31 +190,31 @@ export default function ContactPage() {
           />
         </div>
       </div>
-    </div>
-  );
-}
 
+      {/* Mobile quick bar (INSIDE the main div, at the bottom) */}
+      <div className="fixed inset-x-0 bottom-0 z-30 px-4 pb-4 sm:hidden">
+        <div className="flex items-center justify-between px-3 py-2 rounded-full bg-neutral-950/95 border border-neutral-800 backdrop-blur">
+          <span className="text-[11px] text-neutral-300">
+            Need help with a shipment?
+          </span>
+          <div className="flex gap-2">
+            <a
+              href={`tel:${phone}`}
+              className="px-3 py-1 text-[11px] rounded-full bg-primary text-primary-content"
+            >
+              Call
+            </a>
+            <a
+              href={`https://wa.me/${whatsapp.replace('+', '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1 text-[11px] rounded-full bg-secondary text-neutral-950"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
-        {/* Mobile quick bar */}
-<div className="fixed inset-x-0 bottom-0 z-30 px-4 pb-4 sm:hidden">
-  <div className="flex items-center justify-between px-3 py-2 rounded-full bg-neutral-950/95 border border-neutral-800 backdrop-blur">
-    <span className="text-[11px] text-neutral-300">Need help with a shipment?</span>
-    <div className="flex gap-2">
-      <a href={`tel:${phone}`} className="px-3 py-1 text-[11px] rounded-full bg-primary text-primary-content">
-        Call
-      </a>
-      <a
-        href={`https://wa.me/${whatsapp.replace('+', '')}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="px-3 py-1 text-[11px] rounded-full bg-secondary text-neutral-950"
-      >
-        WhatsApp
-      </a>
-    </div>
-  </div>
-</div>
-
     </div>
   );
 }
