@@ -1,9 +1,9 @@
+// app/contact/page.jsx
 export default function ContactPage() {
-  // put your real details here:
-  const phone = '+91-9067256810';
-  const altPhone = '+91-8530031710';
+  const phone = '+91-XXXXXXXXXX';
+  const altPhone = '+91-YYYYYYYYYY';
   const email = 'info@hindustanshippingagency.com';
-  const whatsapp = '+91-9067256810';
+  const whatsapp = '+91-XXXXXXXXXX';
 
   return (
     <div className="py-10 sm:py-14">
@@ -67,12 +67,12 @@ export default function ContactPage() {
 
           <div className="p-4 text-xs text-neutral-200 rounded-xl bg-neutral-950/40 border border-neutral-800">
             <h2 className="mb-1 text-sm font-semibold">Working Hours</h2>
-            <p>Monday – Saturday: 9:00 AM to 5:30 PM (IST)</p>
+            <p>Monday – Saturday: 10:00 AM to 7:00 PM (IST)</p>
             <p>Port operations &amp; vessel attendance as per schedule.</p>
           </div>
         </div>
 
-        {/* Right: Simple Form – sends data via mailto */}
+        {/* Right: Simple mailto form */}
         <div className="p-5 rounded-2xl bg-neutral-950/50 border border-neutral-800">
           <h2 className="mb-3 text-base font-semibold">Send Us Your Query</h2>
           <p className="mb-4 text-xs text-neutral-300">
@@ -116,7 +116,7 @@ export default function ContactPage() {
                   type="tel"
                   name="Phone / WhatsApp"
                   className="w-full px-3 py-2 text-xs text-white border rounded-md outline-none border-neutral-700 bg-neutral-950 focus:border-primary"
-                  placeholder="+91-9067256810"
+                  placeholder="+91-XXXXXXXXXX"
                   required
                 />
               </div>
@@ -154,7 +154,6 @@ export default function ContactPage() {
           agricultural regions.
         </p>
         <div className="overflow-hidden rounded-xl aspect-video bg-neutral-950 border border-neutral-800">
-          {/* Simple working Google Maps embed */}
           <iframe
             title="Jaigad Port Map"
             src="https://www.google.com/maps?q=Jaigad+Port+Ratnagiri&output=embed"
@@ -163,6 +162,11 @@ export default function ContactPage() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
+      </div>
+    </div>
+  );
+}
+
       </div>
     </div>
   );
