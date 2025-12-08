@@ -67,7 +67,7 @@ export default function ContactPage() {
 
           <div className="p-4 text-xs text-neutral-200 rounded-xl bg-neutral-950/70 border border-neutral-800">
             <h2 className="mb-1 text-sm font-semibold">Working Hours</h2>
-            <p>Monday – Saturday: 10:00 AM to 7:00 PM (IST)</p>
+            <p>Monday – Saturday: 9:00 AM to 5:30 PM (IST)</p>
             <p>Port operations &amp; vessel attendance as per schedule.</p>
           </div>
 
