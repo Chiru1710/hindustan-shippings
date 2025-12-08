@@ -185,6 +185,26 @@ export default function ContactPage() {
 }
 
       </div>
+        {/* Mobile quick bar */}
+<div className="fixed inset-x-0 bottom-0 z-30 px-4 pb-4 sm:hidden">
+  <div className="flex items-center justify-between px-3 py-2 rounded-full bg-neutral-950/95 border border-neutral-800 backdrop-blur">
+    <span className="text-[11px] text-neutral-300">Need help with a shipment?</span>
+    <div className="flex gap-2">
+      <a href={`tel:${phone}`} className="px-3 py-1 text-[11px] rounded-full bg-primary text-primary-content">
+        Call
+      </a>
+      <a
+        href={`https://wa.me/${whatsapp.replace('+', '')}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-3 py-1 text-[11px] rounded-full bg-secondary text-neutral-950"
+      >
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }
