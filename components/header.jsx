@@ -40,7 +40,7 @@ export function Header() {
           ))}
           <li>
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/9067256810"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-1.5 text-xs font-medium rounded-full bg-primary text-primary-content hover:opacity-90"
