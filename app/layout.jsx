@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
               </Link>
 
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/9067256810"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center rounded-full border border-cyan-500 px-3 py-1.5 text-xs font-medium hover:bg-cyan-500 hover:text-slate-950 transition-colors"
