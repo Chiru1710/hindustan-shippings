@@ -1,44 +1,56 @@
-import Image from 'next/image';
+// components/header.jsx
 import Link from 'next/link';
-import netlifyLogo from 'public/netlify-logo.svg';
-import githubLogo from 'public/images/github-mark-white.svg';
 
 const navItems = [
     { linkText: 'Home', href: '/' },
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' },
-    { linkText: 'Middleware', href: '/middleware' },
-    { linkText: 'Routing', href: '/routing' }
+    { linkText: 'About', href: '/about' },
+    { linkText: 'Services', href: '/services' },
+    { linkText: 'Contact', href: '/contact' }
 ];
 
 export function Header() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
-            <Link href="/">
-                <Image src={netlifyLogo} alt="Netlify logo" />
-            </Link>
-            {!!navItems?.length && (
-                <ul className="flex flex-wrap gap-x-4 gap-y-1">
-                    {navItems.map((item, index) => (
-                        <li key={index}>
-                            <Link href={item.href} className="inline-flex px-1.5 py-1 sm:px-3 sm:py-2">
+        <header className="pt-8 pb-8 sm:pt-10 sm:pb-10">
+            <nav className="flex flex-wrap items-center gap-4">
+                {/* Brand */}
+                <Link href="/" className="flex items-center gap-3">
+                    <div className="flex items-center justify-center w-10 h-10 text-sm font-semibold rounded-full bg-primary text-primary-content">
+                        HSA
+                    </div>
+                    <div className="flex flex-col">
+                        <span className="text-sm font-semibold md:text-base">
+                            Hindustan Shipping Agency
+                        </span>
+                        <span className="text-xs text-neutral-300">
+                            Jaigad (Jaigarh) Port · Ratnagiri, Maharashtra
+                        </span>
+                    </div>
+                </Link>
+
+                {/* Nav links */}
+                <ul className="flex flex-wrap items-center gap-3 ml-auto text-xs sm:text-sm">
+                    {navItems.map((item) => (
+                        <li key={item.href}>
+                            <Link
+                                href={item.href}
+                                className="px-3 py-1 transition-colors rounded-full text-neutral-100 hover:text-blue-950 hover:bg-primary"
+                            >
                                 {item.linkText}
                             </Link>
                         </li>
                     ))}
+                    <li>
+                        <a
+                            href="https://wa.me/9067256810"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-1.5 text-xs font-medium rounded-full bg-primary text-primary-content hover:opacity-90"
+                        >
+                            WhatsApp Us
+                        </a>
+                    </li>
                 </ul>
-            )}
-            <Link
-                href="https://github.com/netlify-templates/next-platform-starter"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-auto"
-            >
-                <Image src={githubLogo} alt="GitHub logo" className="w-7" />
-            </Link>
-        </nav>
+            </nav>
+        </header>
     );
 }
