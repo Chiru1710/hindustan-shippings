@@ -1,8 +1,7 @@
-// app/contact/page.jsx
 export default function ContactPage() {
   const phone = '+91-9067256810';
   const altPhone = '+91-8530031710';
-  const email = 'info@hindustanshippingagency.com';
+  const email = 'hindustsan356.com';
   const whatsapp = '+91-9067256810';
 
   return (
@@ -19,7 +18,7 @@ export default function ContactPage() {
       <div className="grid gap-8 lg:grid-cols-2">
         {/* Left: Contact Details */}
         <div className="space-y-5 text-sm">
-          <div className="p-4 rounded-xl bg-neutral-950/40 border border-neutral-800">
+          <div className="p-4 rounded-xl bg-neutral-950/70 border border-neutral-800">
             <h2 className="mb-2 text-base font-semibold">Office Details</h2>
             <p className="text-xs text-neutral-200">
               <span className="font-semibold">Hindustan Shipping Agency</span>
@@ -32,23 +31,23 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="p-4 space-y-1 text-xs text-neutral-200 rounded-xl bg-neutral-950/40 border border-neutral-800">
+          <div className="p-4 space-y-1 text-xs text-neutral-200 rounded-xl bg-neutral-950/70 border border-neutral-800">
             <h2 className="mb-1 text-sm font-semibold">Communication</h2>
             <p>
               <span className="font-semibold">Phone:</span>{' '}
-              <a href={`tel:${phone}`} className="underline">
+              <a href={`tel:${phone}`} className="underline hover:text-primary">
                 {phone}
               </a>
             </p>
             <p>
               <span className="font-semibold">Alternate:</span>{' '}
-              <a href={`tel:${altPhone}`} className="underline">
+              <a href={`tel:${altPhone}`} className="underline hover:text-primary">
                 {altPhone}
               </a>
             </p>
             <p>
               <span className="font-semibold">Email:</span>{' '}
-              <a href={`mailto:${email}`} className="underline">
+              <a href={`mailto:${email}`} className="underline hover:text-secondary">
                 {email}
               </a>
             </p>
@@ -58,26 +57,46 @@ export default function ContactPage() {
                 href={`https://wa.me/${whatsapp.replace('+', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="underline hover:text-secondary"
               >
                 {whatsapp}
               </a>
             </p>
           </div>
 
-          <div className="p-4 text-xs text-neutral-200 rounded-xl bg-neutral-950/40 border border-neutral-800">
+          <div className="p-4 text-xs text-neutral-200 rounded-xl bg-neutral-950/70 border border-neutral-800">
             <h2 className="mb-1 text-sm font-semibold">Working Hours</h2>
-            <p>Monday – Saturday: 9:00 AM to 5:30 PM (IST)</p>
+            <p>Monday – Saturday: 10:00 AM to 7:00 PM (IST)</p>
             <p>Port operations &amp; vessel attendance as per schedule.</p>
+          </div>
+
+          <div className="p-4 text-xs text-neutral-200 rounded-xl bg-neutral-950/70 border border-neutral-800">
+            <h2 className="mb-1 text-sm font-semibold">Quick Actions</h2>
+            <div className="flex flex-wrap gap-2 mt-1">
+              <a href={`tel:${phone}`} className="btn" style={{ ['--btn-font-size']: '0.7rem' }}>
+                Call now
+              </a>
+              <a
+                href={`https://wa.me/${whatsapp.replace('+', '')}?text=Hello%20HSA%2C%20please%20call%20me%20back%20regarding%20a%20shipment.`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+                style={{ ['--btn-font-size']: '0.7rem' }}
+              >
+                WhatsApp callback
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Right: Simple mailto form */}
-        <div className="p-5 rounded-2xl bg-neutral-950/50 border border-neutral-800">
-          <h2 className="mb-3 text-base font-semibold">Send Us Your Query</h2>
+        {/* Right: callback form (target for #callback-form) */}
+        <div
+          id="callback-form"
+          className="p-5 rounded-2xl bg-neutral-950/80 border border-neutral-800 shadow-[0_0_40px_rgba(15,23,42,0.9)]"
+        >
+          <h2 className="mb-3 text-base font-semibold">Request a Call Back / Send Your Query</h2>
           <p className="mb-4 text-xs text-neutral-300">
-            This form will open your email app with the details filled in. You
-            can review and send it directly to us.
+            This form will open your email app with the details filled in. You can review and send it directly to us.
           </p>
           <form
             className="space-y-4 text-xs"
@@ -138,8 +157,7 @@ export default function ContactPage() {
           </form>
 
           <p className="mt-4 text-[11px] text-neutral-400">
-            Note: This button opens your default email application with the
-            details filled. If no email app is configured, nothing will appear.
+            Note: This button opens your default email application with the details filled. If no email app is configured, nothing will appear.
           </p>
         </div>
       </div>
@@ -148,9 +166,8 @@ export default function ContactPage() {
       <div className="mt-10">
         <h2 className="mb-2 text-base font-semibold">Location Overview</h2>
         <p className="mb-3 text-xs text-neutral-200">
-          Jaigad (Jaigarh) Port is located on the west coast of Maharashtra,
-          between Mumbai and Goa. The office is situated in the Jaigad area of
-          Ratnagiri district, with road connectivity to nearby industrial and
+          Jaigad (Jaigarh) Port is located on the west coast of Maharashtra, between Mumbai and Goa. The office
+          is situated in the Jaigad area of Ratnagiri district, with road connectivity to nearby industrial and
           agricultural regions.
         </p>
         <div className="overflow-hidden rounded-xl aspect-video bg-neutral-950 border border-neutral-800">
