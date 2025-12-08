@@ -5,15 +5,18 @@
 @theme {
     --background-image-noise: linear-gradient(
             to bottom,
-            color-mix(in oklab, var(--color-neutral-950) 0%, transparent),
-            color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
+            color-mix(in oklab, #020617 0%, transparent),
+            color-mix(in oklab, #020617 100%, transparent)
         ),
         url('/images/noise.png');
-    --color-primary: #2bdcd2;
-    --color-primary-content: #171717;
-    --color-secondary: #016968;
-    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
+
+    /* MAIN COLORS: GREEN + ORANGE + BLACK */
+    --color-primary: #22c55e;           /* green */
+    --color-primary-content: #020617;   /* very dark text on green */
+    --color-secondary: #f97316;         /* orange accent */
+
+    --font-sans: 'Inter',
+
 }
 
 @layer base {
