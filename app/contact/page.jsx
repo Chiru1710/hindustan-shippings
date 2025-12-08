@@ -1,9 +1,9 @@
 // app/contact/page.jsx
 export default function ContactPage() {
-  const phone = '+91-9067256810';
-  const altPhone = '+91-8530031710';
+  const phone = '+919067256810';
+  const altPhone = '+918530031710';
   const email = 'hindustan356.com';
-  const whatsapp = '+91-9067256810';
+  const whatsapp = '+919067256810';
 
   return (
     <div className="py-10 sm:py-14">
