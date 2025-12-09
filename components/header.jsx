@@ -8,8 +8,8 @@ const navItems = [
 ];
 
 export function Header() {
-  const phone = '+91-9067256810'; // TODO: put real number
-  const whatsapp = '+91-9067256810'; // TODO: put real WhatsApp
+  const phone = '+919067256810'; // TODO: put real number
+  const whatsapp = '+919067256810'; // TODO: put real WhatsApp
 
   return (
     <header className="pt-4 pb-6 sm:pt-6 sm:pb-8">
