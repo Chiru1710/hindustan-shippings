@@ -3,7 +3,7 @@ export default function ContactPage() {
   const phone = '9067256810';
   const altPhone = '8530031710';
   const email = 'hindustan356.com';
-  const whatsapp = '19067256810';
+  const whatsapp = '9067256810';
 
   return (
     <div className="py-10 sm:py-14">
