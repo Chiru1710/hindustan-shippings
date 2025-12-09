@@ -13,7 +13,7 @@ export default function HomePage() {
             Shipping · Customs · Port Operations
           </p>
           <h1 className="mb-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Premium Shipping &amp; Customs Partner at{' '}
+            Hindustan Shipping Agency &amp; Customs Partner at{' '}
             <span className="text-primary">Jaigad Port</span>.
           </h1>
           <p className="mb-5 text-sm leading-relaxed text-neutral-200 sm:text-base">
